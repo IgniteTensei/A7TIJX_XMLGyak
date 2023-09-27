@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferenciak>
+
+    <konferencia>
+        <cim>Cím 1</cim>
+        <hallgatok>
+            <hallgato>
+                <nev>Név 1</nev>
+                <lakcim>Lak 1</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Név 2</nev>
+                <lakcim>Lak 2</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Név 3</nev>
+                <lakcim>Lak 3</lakcim>
+            </hallgato>
+        </hallgatok> 
+        <helyszin>Hely 1</helyszin>
+        <eloado>
+            <nev>Előadóka</nev>
+            <adoszam>19438943982</adoszam>
+            <lakcim>Lak 99</lakcim>
+        </eloado>
+        <datum>09.10.</datum>
+    </konferencia>
+
+    <konferencia>
+        <cim>CímCím</cim>
+        <hallgatok>
+            <hallgato>
+                <nev>Név vv NN</nev>
+                <lakcim>Lk</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Vén Név</nev>
+                <lakcim>Kal Lak</lakcim>
+            </hallgato>
+        </hallgatok> 
+        <helyszin>A Höly</helyszin>
+        <eloado>
+            <nev>Az</nev>
+            <adoszam>123987425</adoszam>
+            <lakcim>Öhm</lakcim>
+        </eloado>
+        <datum>12.05.</datum>
+    </konferencia>
+
+    <konferencia>
+        <cim>Míc</cim>
+        <hallgatok>
+            <hallgato>
+                <nev>Vala</nev>
+                <lakcim>Köl</lakcim>
+            </hallgato>
+        </hallgatok> 
+        <helyszin>Valahol</helyszin>
+        <eloado>
+            <nev>Tal</nev>
+            <adoszam>12631376423</adoszam>
+            <lakcim>Án</lakcim>
+        </eloado>
+        <datum>12.02.</datum>
+    </konferencia>
+    
+</konferenciak>
