@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orarend>
+	<nap nap="hetfo">
+		<ora id="1" tipus="eloadas">
+			<oranev>Fizika II</oranev>
+			<hely helytipus="eloado" emelet="3" epulet="A1">30</hely>
+			<kezdes>8</kezdes>
+			<veg>10</veg>
+		</ora>
+		<ora id="2" type="eloadas">
+			<oranev>Szoftvertesztelés</oranev>
+			<hely helytipus="terem" emelet="1" epulet="info">103</hely>
+			<kezdes>10</kezdes>
+			<veg>12</veg>
+		</ora>
+		<ora id="3" type="gyakorlat">
+			<oranev>Szoftvertesztelés</oranev>
+			<hely helytipus="terem" emelet="1" epulet="info">103</hely>
+			<kezdes>12</kezdes>
+			<veg>14</veg>
+		</ora>
+		<ora id="4" type="eloadas">
+			<oranev>WebTech I</oranev>
+			<hely helytipus="eloado" emelet="3" epulet="A1">30</hely>
+			<kezdes>14</kezdes>
+			<veg>16</veg>
+		</ora>
+		<ora id="5" type="gyakorlat">
+			<oranev>WebTech I</oranev>
+			<hely helytipus="terem" emelet="2" epulet="info">202</hely>
+			<kezdes>16</kezdes>
+			<veg>18</veg>
+		</ora>
+	</nap>
+</orarend>

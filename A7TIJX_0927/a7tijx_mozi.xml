@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mozi>
+	<film
+		id="txn_nxm_2jb"
+		mufaj="horror"
+	>
+		<rendezo
+            id="nzk_4xm_2jb"
+            nev="alex"
+        />
+        <színész
+            id="u5g_4xm_2jb"
+            nev="Madison Ivy"      
+        />
+        <iro
+            nev="trv_4xm_2jb"
+        />		
+	</film>
+</mozi>
