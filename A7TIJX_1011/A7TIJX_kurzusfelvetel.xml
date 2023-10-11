@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<a7tijx_kurzusfelvetel tanev="2023/24 I." egyetem="ME">
+    
+    <hallgato>
+        <hnev>Györki Ádám</hnev>
+        <szulev>2000</szulev>
+        <szak evfolyam="4"></szak>
+    </hallgato>
+
+    <kurzusok>
+
+        <kurzus id="">
+            <kurzusnev></kurzusnev>
+            <kredit></kredit>
+            <hely></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+        </kurzus>
+
+        <kurzus id="">
+            <kurzusnev></kurzusnev>
+            <kredit></kredit>
+            <hely></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+        </kurzus>
+
+        <kurzus id="">
+            <kurzusnev></kurzusnev>
+            <kredit></kredit>
+            <hely></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+        </kurzus>
+
+        <kurzus id="">
+            <kurzusnev></kurzusnev>
+            <kredit></kredit>
+            <hely></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+        </kurzus>
+
+        <kurzus id="" jovahagyva="">
+            <kurzusnev></kurzusnev>
+            <kredit></kredit>
+            <hely></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+        </kurzus>
+
+        <kurzus id="" nyelv="">
+            <kurzusnev></kurzusnev>
+            <kredit></kredit>
+            <hely></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+            <oraado></oraado>
+        </kurzus>
+    </kurzusok>
+
+</a7tijx_kurzusfelvetel>
