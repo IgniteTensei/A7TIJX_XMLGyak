@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="fesznev"></xs:element>
+    <xs:element name="helyszin"></xs:element>
+    <xs:element name="ev"></xs:element>
+    <xs:attribute name="fesz_id"></xs:attribute>
+
+    <xs:element name="felnev"></xs:element>
+    <xs:element name="orszag"></xs:element>
+    <xs:element name="dij"></xs:element>
+    <xs:attribute name="fel_id"></xs:attribute>
+
+    <xs:element name="tnev"></xs:element>
+    <xs:element name="adoszam"></xs:element>
+    <xs:element name="alapitas"></xs:element>
+    <xs:element name="bevetel"></xs:element>
+    <xs:attribute name="t_id"></xs:attribute>
+
+    <xs:element name="rnev"></xs:element>
+    <xs:element name="diakigazolvany"></xs:element>
+    <xs:attribute name="r_id"></xs:attribute>
+
+    <xs:element name="telepules"></xs:element>
+    <xs:element name="utca"></xs:element>
+    <xs:element name="hazszam"></xs:element>
+
+    <xs:element name="kerdezo"></xs:element>
+    <xs:attribute name="k_id"></xs:attribute>
+
+    <xs:element name="nyelv"></xs:element>
+    <xs:element name="szint"></xs:element>
+    <xs:attribute name="ny_id"></xs:attribute>
+
+    <xs:element name="bnev"></xs:element>
+    <xs:element name="ceg"></xs:element>
+    <xs:element name="ital"></xs:element>
+    <xs:attribute name="b_id"></xs:attribute>
+
+    <xs:element name="anev"></xs:element>
+    <xs:element name="fizetes"></xs:element>
+    <xs:element name="muszak"></xs:element>
+    <xs:attribute name="a_id"></xs:attribute>
+
+    <xs:element name="fesztival">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fesznev"></xs:element>
+                <xs:element ref="helyszin"></xs:element>
+                <xs:element ref="ev"></xs:element>
+                <xs:element name="fellepo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="felnev"></xs:element>
+                            <xs:element ref="orszag"></xs:element>
+                            <xs:element ref="dij"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute ref="fel_id"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tulajdonos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="tnev"></xs:element>
+                            <xs:element ref="adoszam"></xs:element>
+                            <xs:element ref="alapitas"></xs:element>
+                            <xs:element ref="bevetel"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute ref="t_id"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="resztvevo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="rnev"></xs:element>
+                            <xs:element ref="diakigazolvany" minOccurs="0"></xs:element>
+                            <xs:element name="lakcim">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="telepules"></xs:element>
+                                        <xs:element ref="utca"></xs:element>
+                                        <xs:element ref="hazszam"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="kozvelemeny">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="kerdezo"></xs:element>
+                                        <xs:element name="nyelvtudas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element ref="nyelv"></xs:element>
+                                                    <xs:element ref="szint"></xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute ref="ny_id"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute ref="k_id"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute ref="r_id"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="bar">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="bnev"></xs:element>
+                            <xs:element ref="ceg"></xs:element>
+                            <xs:element name="italok">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="ital" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="alkalmazott">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="anev"></xs:element>
+                                        <xs:element ref="fizetes"></xs:element>
+                                        <xs:element name="muszakok">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element ref="muszak" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute ref="a_id"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute ref="b_id"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute ref="fesz_id"/>
+        </xs:complexType>
+    </xs:element>
+
+
+
+</xs:schema>

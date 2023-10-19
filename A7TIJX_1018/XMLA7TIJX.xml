@@ -1,1 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<fesztival fesz_id="" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="XMLA7TIJX.xsd">
+
+    <fesznev></fesznev>
+    <helyszin></helyszin>
+    <ev></ev>
+
+    <fellepo fel_id="">
+
+        <felnev></felnev>
+        <orszag></orszag>
+        <dij></dij>
+
+    </fellepo>
+
+    <tulajdonos t_id="">
+
+        <tnev></tnev>
+        <adoszam></adoszam>
+        <alapitas></alapitas>
+        <bevetel></bevetel>
+
+    </tulajdonos>
+
+    <resztvevo r_id="">
+
+        <rnev></rnev>
+        <diakigazolvany></diakigazolvany>
+
+        <lakcim>
+
+            <telepules></telepules>
+            <utca></utca>
+            <hazszam></hazszam>
+
+        </lakcim>
+
+        <kozvelemeny k_id="">
+
+            <kerdezo></kerdezo>
+
+            <nyelvtudas ny_id="">
+
+                <nyelv></nyelv>
+                <szint></szint>
+
+            </nyelvtudas>
+
+        </kozvelemeny>
+
+    </resztvevo>
+
+    <bar b_id="">
+
+        <bnev></bnev>
+        <ceg></ceg>
+
+        <italok>
+
+           <ital></ital> 
+           <ital></ital>
+
+        </italok>
+
+        <alkalmazott a_id="">
+
+            <anev></anev>
+            <fizetes></fizetes>
+
+            <muszakok>
+
+                <muszak></muszak>
+                <muszak></muszak>
+
+            </muszakok>
+
+        </alkalmazott>
+
+    </bar>
+
+</fesztival>
