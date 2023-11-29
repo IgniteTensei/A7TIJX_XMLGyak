@@ -1,0 +1,21 @@
+<!ELEMENT A7TIJX_modell (A+, B+, C, AB+)>
+
+<!ELEMENT A (a1, b1+, c1)>
+    <!ATTLIST A a1 ID #REQUIRED>
+    <!ELEMENT b1 (x, y)>
+        <!ELEMENT x (#PCDATA)>
+        <!ELEMENT y (#PCDATA)>
+    <!ELEMENT c1 (d, e)>
+        <!ELEMENT d (#PCDATA)>
+        <!ELEMENT e (#PCDATA)>
+
+<!ELEMENT B (b2)>
+    <!ATTLIST B a2 ID #REQUIRED>
+    <!ATTLIST B c2 IDREF #REQUIRED>
+
+<!ELEMENT C (b3)>
+    <!ATTLIST C a3 ID #REQUIRED>
+
+<!ELEMENT AB (c3)>
+    <!ATTLIST AB a_ik IDREF #REQUIRED>
+    <!ATTLIST AB b_ik IDREF #REQUIRED>

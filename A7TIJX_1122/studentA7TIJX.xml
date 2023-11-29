@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class>
+<class xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="studentA7TIJX.xsd">
+
         <student studentid="1">
             <keresztnev>Géza</keresztnev>
             <vezeteknev>Juhász</vezeteknev>
@@ -20,4 +21,5 @@
             <becenev>Feri</becenev>
             <kor>27</kor>
         </student>
+        
 </class>

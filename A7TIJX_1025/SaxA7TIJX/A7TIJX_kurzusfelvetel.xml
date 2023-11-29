@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<a7tijx_kurzusfelvetel tanev="2023/24 I." egyetem="ME">
+    
+    <hallgato>
+        <hnev>Györki Ádám</hnev>
+        <szulev>2000</szulev>
+        <szak evfolyam="4">Mérnökinformatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+
+        <kurzus id="GEFIT012-B">
+            <kurzusnev>Fizika II.</kurzusnev>
+            <kredit>4</kredit>
+            <hely>30. ea</hely>
+            <idopont>Hétfő</idopont>
+            <oktato>Dr. Pszota Gábor</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>32. ea</hely>
+            <idopont>Kedd</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAK120-B"  nyelv="angol">
+            <kurzusnev>Integrált Vállalati Rendszerek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>10. ea</hely>
+            <idopont>Szerda</idopont>
+            <oktato>Dr. Dadvandipour Samad</oktato>
+            <oraado>Dr. Kulcsárné Dr. Forrai Mónika</oraado>
+        </kurzus>
+
+        <kurzus id="GEIAL31H-B">
+            <kurzusnev>Szoftvertesztelés</kurzusnev>
+            <kredit>5</kredit>
+            <hely>info 103</hely>
+            <idopont>Hétfő</idopont>
+            <oktato>Dr. Hornyák Olivér</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL336-B">
+            <kurzusnev>Webes Alkalmazások</kurzusnev>
+            <kredit>5</kredit>
+            <hely>info 101</hely>
+            <idopont>Kedd</idopont>
+            <oktato>Árvai László Lajos</oktato>
+            <oraado>Dr. Mileff Péter</oraado>
+        </kurzus>
+
+        <kurzus id="GEIAL331-B">
+            <kurzusnev>Webtechnológiák I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>30. ea</hely>
+            <idopont>Hétfő</idopont>
+            <oktato>Dr. Agárdi Anita</oktato>
+        </kurzus>
+    </kurzusok>
+
+</a7tijx_kurzusfelvetel>

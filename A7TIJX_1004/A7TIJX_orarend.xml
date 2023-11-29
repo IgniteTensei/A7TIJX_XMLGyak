@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gyorki_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="A7TIJX_orarend.xsd">
+ 
+    <ora id="1" tipus="eloadas">
+        <targy>Fizika II</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>8</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>A1 305</helyszin>
+        <oktato>Dr. Pszota Gábor</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="2" tipus="eloadas">
+        <targy>Szoftvertesztelés</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>info 103</helyszin>
+        <oktato>Dr. Hornyák Olivér</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="3" tipus="gyakorlat">
+        <targy>Szoftvertesztelés</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>info 103</helyszin>
+        <oktato>Dr. Hornyák Olivér</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="4" tipus="eloadas">
+        <targy>Webtechnológiák I</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>A1 305</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="5" tipus="gyakorlat">
+        <targy>Webtechnológiák I</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>info 103</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="6" tipus="eloadas">
+        <targy>Adatkezelés XMLben</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>XXXII előadó</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="7" tipus="eloadas">
+        <targy>Webes Alkalmazások</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>info 101</helyszin>
+        <oktato>Dr. Árvai László</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="8" tipus="gyakorlat">
+        <targy>Webes Alkalmazások</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>info 101</helyszin>
+        <oktato>Dr. Mileff Péter</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="9" tipus="gyakorlat">
+        <targy>Adatkezelés XMLben</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>info 101f</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="10" tipus="eloadas">
+        <targy>Integrált Vállalati Rendszerek</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>A1 218</helyszin>
+        <oktato>Dr. Samad Dadvandipour</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+    <ora id="11" tipus="gyakorlat">
+        <targy>Integrált Vállalati Rendszerek</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>info 15</helyszin>
+        <oktato>Kulcsárné Dr. Forrai Mónika</oktato>
+        <szak>mérnökinformatikus</szak>
+    </ora>
+
+</gyorki_orarend>

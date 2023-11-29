@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<A7TIJX_modell>
+    <A a1="a1">
+        <b1>
+            <x></x>
+            <y></y>
+        </b1>
+   
+        <b1>
+            <x></x>
+            <y></y>
+        </b1>
+
+        <b1>
+            <x></x>
+            <y></y>
+        </b1>
+
+        <c1>
+            <d></d>
+            <e></e>
+        </c1>
+    </A>
+
+    <B a2="a2" c2="c2">
+        <b2>
+            <x></x>
+            <y></y>
+        </b2>
+    </B>
+
+    <C a3="a3">
+        <b3></b3>
+    </C>
+
+    <AB a_ik="a_ik" b_ik="b_ik">
+        <c3></c3>
+    </AB>
+</A7TIJX_modell>
