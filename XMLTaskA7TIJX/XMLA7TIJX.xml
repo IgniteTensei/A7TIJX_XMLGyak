@@ -2,6 +2,8 @@
 
 <Kepregeny_kiado_A7TIJX>
 
+    <!--A jelenleg futó képregényszériák-->
+
     <Series SeriesID="" SBooks="">
         <SeriesName></SeriesName>
         <Ranking></Ranking>
@@ -13,11 +15,15 @@
         <NumvOfReaders></NumvOfReaders>
     </Series>
 
+    <!--A képregények szerzői-->
+
      <Author AuthorID="" ASeries="">
         <AuthorName></AuthorName>
         <AuthorGender></AuthorGender>
         <AuthorAge></AuthorAge>
      </Author>
+
+     <!--A magazinok amelyekben szereplenek a képregények-->
 
      <Magazine MagazineID="" MSeries="">
         <MagazineName></MagazineName>
@@ -25,6 +31,8 @@
         <Demographic></Demographic>
         <MagazinePrice></MagazinePrice>
      </Magazine>
+
+     <!--A kiadók amelyek kiadják a magazinokat-->
 
      <Publisher PublisherID="" PMagazines="">
         <PublisherName></PublisherName>
@@ -37,11 +45,15 @@
         </HQAddress>
      </Publisher>
 
+     <!--A kiadók elnökei-->
+
      <President PresidnetID="" PPublisher="">
         <PresidentName></PresidentName>
         <PresidentGender></PresidentGender>
         <PresidentAge></PresidentAge>
      </President>
+
+     <!--A képregényszériák nyomtatott könyv formátumban-->
 
      <Book BookID="">
         <BookName></BookName>
@@ -51,9 +63,13 @@
         <VolumeNumber></VolumeNumber>
      </Book>
 
+     <!--Eladások a könyvesboltokban-->
+
      <Selling SBookID="" SBookstoreID="">
         <NumOfSells></NumOfSells>
      </Selling>
+
+     <!--A könyvesboltok ahol eladjáka könyveket-->
 
      <Bookstore BookstoreID="">
         <BookstoreName></BookstoreName>
