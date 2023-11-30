@@ -1,1 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<Kepregeny_kiado_A7TIJX>
+
+    <Series SeriesID="" SBooks="">
+        <SeriesName></SeriesName>
+        <Ranking></Ranking>
+        <Genre>
+            <Subgenre></Subgenre>
+            <Subgenre></Subgenre>
+            <Subgenre></Subgenre>
+        </Genre>
+        <NumvOfReaders></NumvOfReaders>
+    </Series>
+
+     <Author AuthorID="" ASeries="">
+        <AuthorName></AuthorName>
+        <AuthorGender></AuthorGender>
+        <AuthorAge></AuthorAge>
+     </Author>
+
+     <Magazine MagazineID="" MSeries="">
+        <MagazineName></MagazineName>
+        <PublishingFrequency></PublishingFrequency>
+        <Demographic></Demographic>
+        <MagazinePrice></MagazinePrice>
+     </Magazine>
+
+     <Publisher PublisherID="" PMagazines="">
+        <PublisherName></PublisherName>
+        <PhoneNumber></PhoneNumber>
+        <EmailAddress></EmailAddress>ű
+        <HQAddress>
+            <PCity></PCity>
+            <PStreet></PStreet>
+            <PHouseNumber></PHouseNumber>
+        </HQAddress>
+     </Publisher>
+
+     <President PresidnetID="" PPublisher="">
+        <PresidentName></PresidentName>
+        <PresidentGender></PresidentGender>
+        <PresidentAge></PresidentAge>
+     </President>
+
+     <Book BookID="">
+        <BookName></BookName>
+        <BookPrice></BookPrice>
+        <NumOfPages></NumOfPages>
+        <NumOfChapters></NumOfChapters>
+        <VolumeNumber></VolumeNumber>
+     </Book>
+
+     <Selling SBookID="" SBookstoreID="">
+        <NumOfSells></NumOfSells>
+     </Selling>
+
+     <Bookstore BookstoreID="">
+        <BookstoreName></BookstoreName>
+        <StoreAddress>
+            <SCity></SCity>
+            <SStreet></SStreet>
+            <SHouseNumber></SHouseNumber>
+        </StoreAddress>
+     </Bookstore>
+
+</Kepregeny_kiado_A7TIJX>
