@@ -240,29 +240,29 @@
      <!--A könyvesboltok ahol eladjáka könyveket-->
 
      <Bookstore BookstoreID="1">
-        <BookstoreName></BookstoreName>
+        <BookstoreName>Kinokuniya</BookstoreName>
         <StoreAddress>
-            <SCity></SCity>
-            <SStreet></SStreet>
-            <SHouseNumber></SHouseNumber>
+            <SCity>Tokyo</SCity>
+            <SStreet>3-chōme, Shinjuku</SStreet>
+            <SHouseNumber>7-17</SHouseNumber>
         </StoreAddress>
      </Bookstore>
 
      <Bookstore BookstoreID="2">
-        <BookstoreName></BookstoreName>
+        <BookstoreName>Daikanyama T-Site</BookstoreName>
         <StoreAddress>
-            <SCity></SCity>
-            <SStreet></SStreet>
-            <SHouseNumber></SHouseNumber>
+            <SCity>Tokyo</SCity>
+            <SStreet>Sarugaku-cho, Shibuya</SStreet>
+            <SHouseNumber>17-5</SHouseNumber>
         </StoreAddress>
      </Bookstore>
 
      <Bookstore BookstoreID="3">
-        <BookstoreName></BookstoreName>
+        <BookstoreName>Book First Umeda</BookstoreName>
         <StoreAddress>
-            <SCity></SCity>
-            <SStreet></SStreet>
-            <SHouseNumber></SHouseNumber>
+            <SCity>Osaka</SCity>
+            <SStreet>Kita-ku, Shibata</SStreet>
+            <SHouseNumber>1-1-3</SHouseNumber>
         </StoreAddress>
      </Bookstore>
 
