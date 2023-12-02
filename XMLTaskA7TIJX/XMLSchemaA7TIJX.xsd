@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--Képregény kiadó-->
+
+    <xs:element name="Kepregeny_kiado_A7TIJX">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Series" type="SeriesType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Author" type="AuthorType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Magazine" type="MagazineTypes" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Publisher" type="PublisherType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="President" type="PresidentType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Book" type="BookType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Selling" type="SellingType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Bookstore" type="BookstoreType" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Főbb komplex típusok-->
+
+    <xs:complexType name="SeriesType">
+        <xs:sequence>
+            <xs:element ref="SeriesName" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="Ranking" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="Genre" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="NumOfReaders" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="SeriesID" type="xs:integer" use="required"/>
+        <xs:attribute name="SMagazine" type="xs:integer" use="required"/>
+        <xs:attribute name="SAuthor" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="AuthorType">
+        <xs:sequence>
+            <xs:element ref="AuthorName" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="AuthorGender" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="AuthorAge" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="AuthorID" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="MagazineTypes">
+        <xs:sequence>
+            <xs:element ref="MagazineName" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="PublishingFrequency" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="Demographic" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="MagazinePrice" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="MagazineID" type="xs:integer" use="required"/>
+        <xs:attribute name="MPublisher" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="PublisherType">
+        <xs:sequence>
+            <xs:element ref="PublisherName" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="PhoneNumber" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="EmailAddress" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="HQAddress" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="PublisherID" type="xs:integer" use="required"/>
+        <xs:attribute name="PPresident" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="PresidentType">
+        <xs:sequence>
+            <xs:element ref="PresidentName" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="PresidentGender" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="PresidentAge" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="PresidentID" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="BookType">
+        <xs:sequence>
+            <xs:element ref="BookName" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="BookPrice" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="NumOfPages" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="NumOfChapters" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="VolumeNumber" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="BookID" type="xs:integer" use="required"/>
+        <xs:attribute name="BSeries" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="SellingType">
+        <xs:sequence>
+            <xs:element name="NumOfSells" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="SBookID" type="xs:integer" use="required"/>
+        <xs:attribute name="SBookstoreID" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="BookstoreType">
+        <xs:sequence>
+            <xs:element ref="BookstoreName" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="StoreAddress" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="BookstoreID" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <!--Egyszerű típusok-->
+
+        <!--Series-->
+        <xs:element name="SeriesName" type="xs:string"/>
+        <xs:element name="Ranking" type="RankingType"/>
+        <xs:element name="NumOfReaders" type="xs:int"/>
+        <xs:element name="Genre" type="GenreType"/>
+
+        <xs:element name="Subgenre" type="xs:string"/>
+
+        <!--Author-->
+        <xs:element name="AuthorName" type="xs:string"/>
+        <xs:element name="AuthorAge" type="xs:int"/>
+        <xs:element name="AuthorGender" type="AuthorGenderType"/>
+
+        <!--Magazine-->
+        <xs:element name="MagazineName" type="xs:string"/>
+        <xs:element name="PublishingFrequency" type="PublishingFrequencyType"/>
+        <xs:element name="Demographic" type="DemographicType"/>
+        <xs:element name="MagazinePrice" type="MagazinePriceType"/>
+
+        <!--Publisher-->
+        <xs:element name="PublisherName" type="xs:string"/>
+        <xs:element name="PhoneNumber" type="PhoneNumberType"/>
+        <xs:element name="EmailAddress" type="EmailAddressType"/>
+        <xs:element name="HQAddress" type="HQAddressType"/>
+
+        <xs:element name="PCity" type="xs:string"/>
+        <xs:element name="PStreet" type="xs:string"/>
+        <xs:element name="PHouseNumber" type="xs:string"/>
+
+        <!--President-->
+        <xs:element name="PresidentName" type="xs:string"/>
+        <xs:element name="PresidentAge" type="xs:int"/>
+        <xs:element name="PresidentGender" type="PresidentGenderType"/>
+        
+        <!--Book-->
+        <xs:element name="BookName" type="xs:string"/>
+        <xs:element name="BookPrice" type="BookPriceType"/>
+        <xs:element name="NumOfPages" type="xs:int"/>
+        <xs:element name="NumOfChapters" type="xs:int"/>
+        <xs:element name="VolumeNumber" type="xs:int"/>
+
+        <!--Selling-->
+        <xs:element name="NumOfSells" type="xs:int"/>
+
+        <!--Bookstore-->
+        <xs:element name="BookstoreName" type="xs:string"/>
+        <xs:element name="StoreAddress" type="StoreAddressType"/>
+
+        <xs:element name="SCity" type="xs:string"/>
+        <xs:element name="SStreet" type="xs:string"/>
+        <xs:element name="SHouseNumber" type="xs:string"/>
+
+    <!--Saját típusok-->
+
+    <xs:simpleType name="RankingType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9])+#"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AuthorGenderType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Male"/>
+            <xs:enumeration value="Female"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PublishingFrequencyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Weekly"/>
+            <xs:enumeration value="Bi-Weekly"/>
+            <xs:enumeration value="Monthly"/>
+            <xs:enumeration value="Quarterly"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="DemographicType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Shounen"/>
+            <xs:enumeration value="Seinen"/>
+            <xs:enumeration value="Shojo"/>
+            <xs:enumeration value="Josei"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="MagazinePriceType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="¥([0-9])+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PhoneNumberType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{3}-[0-9]{4}-[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="EmailAddressType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PresidentGenderType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Male|Female"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="BookPriceType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="$([0-9])+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--Komplex típusok-->
+
+    <xs:complexType name="GenreType">
+        <xs:sequence>
+            <xs:element ref="Subgenre" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+            
+    <xs:complexType name="HQAddressType">
+        <xs:sequence>
+            <xs:element ref="PCity" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="PStreet" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="PHouseNumber" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="StoreAddressType">
+        <xs:sequence>
+            <xs:element ref="SCity" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="SStreet" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="SHouseNumber" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

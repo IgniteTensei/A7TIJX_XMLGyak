@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Kepregeny_kiado_A7TIJX>
+<Kepregeny_kiado_A7TIJX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="XMLSchemaA7TIJX.xsd">
 
     <!--A jelenleg futó képregényszériák-->
 
     <Series SeriesID="1" SMagazine="3" SAuthor="2">
         <SeriesName>Chainsaw Man</SeriesName>
-        <Ranking>3</Ranking>
+        <Ranking>3#</Ranking>
         <Genre>
             <Subgenre>Action</Subgenre>
             <Subgenre>Supernatural</Subgenre>
@@ -17,7 +18,7 @@
 
     <Series SeriesID="2" SMagazine="2" SAuthor="1">
         <SeriesName>20th Century Boys</SeriesName>
-        <Ranking>23</Ranking>
+        <Ranking>23#</Ranking>
         <Genre>
             <Subgenre>Drama</Subgenre>
             <Subgenre>Mystery</Subgenre>
@@ -28,7 +29,7 @@
 
     <Series SeriesID="3" SMagazine="1" SAuthor="3">
         <SeriesName>Attack on Titan</SeriesName>
-        <Ranking>2</Ranking>
+        <Ranking>2#</Ranking>
         <Genre>
             <Subgenre>Action</Subgenre>
             <Subgenre>Drama</Subgenre>
@@ -39,7 +40,7 @@
 
     <Series SeriesID="4" SMagazine="4" SAuthor="2">
         <SeriesName>Fire Punch</SeriesName>
-        <Ranking>59</Ranking>
+        <Ranking>59#</Ranking>
         <Genre>
             <Subgenre>Action</Subgenre>
             <Subgenre>Supernatural</Subgenre>
@@ -135,19 +136,19 @@
 
      <!--A kiadók elnökei-->
 
-     <President PresidnetID="1">
+     <President PresidentID="1">
         <PresidentName>Noma Yoshinobu</PresidentName>
         <PresidentGender>Male</PresidentGender>
         <PresidentAge>54</PresidentAge>
      </President>
 
-     <President PresidnetID="2">
+     <President PresidentID="2">
         <PresidentName>Horiuchi Marue</PresidentName>
         <PresidentGender>Male</PresidentGender>
         <PresidentAge>72</PresidentAge>
      </President>
 
-     <President PresidnetID="3">
+     <President PresidentID="3">
         <PresidentName>Oga Nobuhiro</PresidentName>
         <PresidentGender>Male</PresidentGender>
         <PresidentAge>75</PresidentAge>
