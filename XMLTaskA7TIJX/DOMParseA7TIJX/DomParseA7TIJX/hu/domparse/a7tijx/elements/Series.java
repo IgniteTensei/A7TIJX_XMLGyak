@@ -1,5 +1,6 @@
 package hu.domparse.a7tijx.elements;
 
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.util.ArrayList;
@@ -30,8 +31,11 @@ public class Series{
             else if(nodeName.equals("NumOfReaders")){series.numOfReaders = Integer.parseInt(nodeContent);}
             else if(nodeName.equals("Genre")){
                 List<String> subgenreList = new ArrayList<String>();
-                for (String subgenre : subgenreList) {
-                    subgenreList.add(subgenre);
+                for (int j = 0; j < seriesNodes.item(item).getChildNodes().item(i).getChildNodes().getLength(); j++ ) {
+                    if(seriesNodes.item(item).getChildNodes().item(i).getChildNodes().item(j).getNodeType() == Node.ELEMENT_NODE){
+                        subgenreList.add(seriesNodes.item(item).getChildNodes().item(i).getChildNodes().item(j).getTextContent());
+                    }
+
                 }
                 series.subGenre = subgenreList;
             }
