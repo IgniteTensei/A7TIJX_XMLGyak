@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Kepregeny_kiado_A7TIJX>
+
+    <!--A jelenleg futó képregényszériák-->
+
+    <Series SAuthor="2" SMagazine="3" SeriesID="1">
+        <SeriesName>Bomby Girl</SeriesName>
+        <Ranking>3#</Ranking>
+        <Genre>
+            <Subgenre>Action</Subgenre>
+            <Subgenre>Supernatural</Subgenre>
+            <Subgenre>Gore</Subgenre>
+        </Genre>
+        <NumOfReaders>750000</NumOfReaders>
+    </Series>
+
+    <Series SAuthor="1" SMagazine="2" SeriesID="2">
+        <SeriesName>20th Century Boys</SeriesName>
+        <Ranking>23#</Ranking>
+        <Genre>
+            <Subgenre>Drama</Subgenre>
+            <Subgenre>Mystery</Subgenre>
+            <Subgenre>Sci-fi</Subgenre>
+        </Genre>
+        <NumOfReaders>340000</NumOfReaders>
+    </Series>
+
+    <Series SAuthor="3" SMagazine="1" SeriesID="3">
+        <SeriesName>Attack on Titan</SeriesName>
+        <Ranking>2#</Ranking>
+        <Genre>
+            <Subgenre>Action</Subgenre>
+            <Subgenre>Drama</Subgenre>
+            <Subgenre>Suspense</Subgenre>
+        </Genre>
+        <NumOfReaders>2700000</NumOfReaders>
+    </Series>
+
+    <Series SAuthor="2" SMagazine="4" SeriesID="4">
+        <SeriesName>Fire Punch</SeriesName>
+        <Ranking>59#</Ranking>
+        <Genre>
+            <Subgenre>Action</Subgenre>
+            <Subgenre>Supernatural</Subgenre>
+            <Subgenre>Sci-fi</Subgenre>
+        </Genre>
+        <NumOfReaders>85000</NumOfReaders>
+    </Series>
+
+    <!--A képregények szerzői-->
+
+     <Author AuthorID="1">
+        <AuthorName>Urasawa Naoki</AuthorName>
+        <AuthorGender>Male</AuthorGender>
+        <AuthorAge>63</AuthorAge>
+     </Author>
+
+     <Author AuthorID="2">
+        <AuthorName>Fujimoto Tatsuki</AuthorName>
+        <AuthorGender>Male</AuthorGender>
+        <AuthorAge>31</AuthorAge>
+     </Author>
+
+     <Author AuthorID="3">
+        <AuthorName>Isayama Hajime</AuthorName>
+        <AuthorGender>Male</AuthorGender>
+        <AuthorAge>37</AuthorAge>
+     </Author>
+
+     <!--A magazinok amelyekben szereplenek a képregények-->
+
+     <Magazine MPublisher="3" MagazineID="1">
+        <MagazineName>Monthly Shounen Magazine</MagazineName>
+        <PublishingFrequency>Monthly</PublishingFrequency>
+        <Demographic>Shounen</Demographic>
+        <MagazinePrice>¥270</MagazinePrice>
+     </Magazine>
+
+     <Magazine MPublisher="2" MagazineID="2">
+        <MagazineName>Big Comic Spirits</MagazineName>
+        <PublishingFrequency>Weekly</PublishingFrequency>
+        <Demographic>Seinen</Demographic>
+        <MagazinePrice>¥280</MagazinePrice>
+     </Magazine>
+
+     <Magazine MPublisher="1" MagazineID="3">
+        <MagazineName>Weekly Shounen Jump</MagazineName>
+        <PublishingFrequency>Monthly</PublishingFrequency>
+        <Demographic>Shounen</Demographic>
+        <MagazinePrice>¥250</MagazinePrice>
+     </Magazine>
+
+     <Magazine MPublisher="1" MagazineID="4">
+        <MagazineName>Shounen Jump+</MagazineName>
+        <PublishingFrequency>Weekly</PublishingFrequency>
+        <Demographic>Shounen</Demographic>
+        <MagazinePrice>¥200</MagazinePrice>
+     </Magazine>
+
+     <!--A kiadók amelyek kiadják a magazinokat-->
+
+     <Publisher PPresident="2" PublisherID="1">
+        <PublisherName>Shuiesha</PublisherName>
+        <PhoneNumber>090-1731-1447</PhoneNumber>
+        <EmailAddress>doe@shueisha.co.jp</EmailAddress>
+        <HQAddress>
+            <PCity>Tokyo</PCity>
+            <PStreet>HitotsubashivChiyoda-ku</PStreet>
+            <PHouseNumber>2-5-10</PHouseNumber>
+        </HQAddress>
+     </Publisher>
+
+     <Publisher PPresident="3" PublisherID="2">
+        <PublisherName>Shogakukan</PublisherName>
+        <PhoneNumber>123-4567-8910</PhoneNumber>
+        <EmailAddress>doe@shogakukan.co.jp</EmailAddress>
+        <HQAddress>
+            <PCity>Tokyo</PCity>
+            <PStreet>Hitotsubashi Chiyoda-ku</PStreet>
+            <PHouseNumber>2-3-1</PHouseNumber>
+        </HQAddress>
+     </Publisher>
+
+     <Publisher PPresident="1" PublisherID="3">
+        <PublisherName>Kodansha</PublisherName>
+        <PhoneNumber>080-9598-3865</PhoneNumber>
+        <EmailAddress>doe@kodansha.co.jp</EmailAddress>
+        <HQAddress>
+            <PCity>Tokyo</PCity>
+            <PStreet>Otowa Bunkyo-ku </PStreet>
+            <PHouseNumber>2-12-21</PHouseNumber>
+        </HQAddress>
+     </Publisher>
+
+     <!--A kiadók elnökei-->
+
+     <President PresidentID="1">
+        <PresidentName>Noma Yoshinobu</PresidentName>
+        <PresidentGender>Female</PresidentGender>
+        <PresidentAge>54</PresidentAge>
+     </President>
+
+     <President PresidentID="2">
+        <PresidentName>Horiuchi Marue</PresidentName>
+        <PresidentGender>Male</PresidentGender>
+        <PresidentAge>72</PresidentAge>
+     </President>
+
+     <President PresidentID="3">
+        <PresidentName>Oga Nobuhiro</PresidentName>
+        <PresidentGender>Male</PresidentGender>
+        <PresidentAge>75</PresidentAge>
+     </President>
+
+     <!--A képregényszériák nyomtatott könyv formátumban-->
+
+     <Book BSeries="1" BookID="1">
+        <BookName>Chainsaw Man Vol.1</BookName>
+        <BookPrice>$20</BookPrice>
+        <NumOfPages>200</NumOfPages>
+        <NumOfChapters>8</NumOfChapters>
+        <VolumeNumber>1</VolumeNumber>
+     </Book>
+
+     <Book BSeries="1" BookID="2">
+        <BookName>Chainsaw Man Vol.2</BookName>
+        <BookPrice>$20</BookPrice>
+        <NumOfPages>200</NumOfPages>
+        <NumOfChapters>7</NumOfChapters>
+        <VolumeNumber>2</VolumeNumber>
+     </Book>
+
+     <Book BSeries="3" BookID="3">
+        <BookName>Attack on Titan Vol.1</BookName>
+        <BookPrice>$25</BookPrice>
+        <NumOfPages>230</NumOfPages>
+        <NumOfChapters>7</NumOfChapters>
+        <VolumeNumber>1</VolumeNumber>
+     </Book>
+
+     <Book BSeries="4" BookID="4">
+        <BookName>20th Century Boys Vol.2</BookName>
+        <BookPrice>$30</BookPrice>
+        <NumOfPages>340</NumOfPages>
+        <NumOfChapters>11</NumOfChapters>
+        <VolumeNumber>2</VolumeNumber>
+     </Book>
+
+     <Book BSeries="4" BookID="5">
+        <BookName>Fire Punch Vol.1</BookName>
+        <BookPrice>$25</BookPrice>
+        <NumOfPages>260</NumOfPages>
+        <NumOfChapters>9</NumOfChapters>
+        <VolumeNumber>1</VolumeNumber>
+     </Book>
+
+     <!--Eladások a könyvesboltokban-->
+
+     <Selling SBookID="1" SBookstoreID="1">
+        <NumOfSells>4000</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="1" SBookstoreID="2">
+        <NumOfSells>3000</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="1" SBookstoreID="3">
+        <NumOfSells>7000</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="2" SBookstoreID="1">
+        <NumOfSells>3000</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="55" SBookstoreID="2">
+        <NumOfSells>2500</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="2" SBookstoreID="3">
+        <NumOfSells>4000</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="3" SBookstoreID="1">
+        <NumOfSells>8000</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="3" SBookstoreID="3">
+        <NumOfSells>10000</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="4" SBookstoreID="2">
+        <NumOfSells>3000</NumOfSells>
+     </Selling>
+
+     <Selling SBookID="5" SBookstoreID="3">
+        <NumOfSells>2500</NumOfSells>
+     </Selling>
+
+     <!--A könyvesboltok ahol eladjáka könyveket-->
+
+     <Bookstore BookstoreID="1">
+        <BookstoreName>Kinokuniya</BookstoreName>
+        <StoreAddress>
+            <SCity>Tokyo</SCity>
+            <SStreet>3-chōme, Shinjuku</SStreet>
+            <SHouseNumber>7-17</SHouseNumber>
+        </StoreAddress>
+     </Bookstore>
+
+     <Bookstore BookstoreID="2">
+        <BookstoreName>Daikanyama T-Site</BookstoreName>
+        <StoreAddress>
+            <SCity>Tokyo</SCity>
+            <SStreet>Sarugaku-cho, Shibuya</SStreet>
+            <SHouseNumber>17-5</SHouseNumber>
+        </StoreAddress>
+     </Bookstore>
+
+     <Bookstore BookstoreID="3">
+        <BookstoreName>Book First Umeda</BookstoreName>
+        <StoreAddress>
+            <SCity>Osaka</SCity>
+            <SStreet>Kita-ku, Shibata</SStreet>
+            <SHouseNumber>1-1-3</SHouseNumber>
+        </StoreAddress>
+     </Bookstore>
+
+</Kepregeny_kiado_A7TIJX>

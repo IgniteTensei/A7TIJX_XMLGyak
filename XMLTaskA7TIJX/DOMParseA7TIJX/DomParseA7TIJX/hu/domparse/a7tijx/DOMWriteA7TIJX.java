@@ -1,7 +1,6 @@
 package hu.domparse.a7tijx;
 
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,12 +13,14 @@ import java.io.FileOutputStream;
 public class DOMWriteA7TIJX {
     public static void main(String[] args) {
         try{
+            //XML dokumentum read
             DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = builderFactory.newDocumentBuilder();
             Document document = builder.parse("XMLA7TIJX.xml");
             document.getDocumentElement().normalize();
 
             try {
+                //XML dokumentum write
                 TransformerFactory transformerFactory = TransformerFactory.newInstance();
                 Transformer transformer = transformerFactory.newTransformer();
                 DOMSource domSource = new DOMSource(document);

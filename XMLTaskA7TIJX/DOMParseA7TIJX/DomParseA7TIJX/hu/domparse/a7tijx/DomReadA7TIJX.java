@@ -19,6 +19,7 @@ import static hu.domparse.a7tijx.elements.Series.makeSeriesList;
 public class DomReadA7TIJX {
     public static void main(String[] args) {
         try{
+            //XML dokumentum read
             DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = builderFactory.newDocumentBuilder();
             Document document = builder.parse("XMLA7TIJX.xml");
@@ -46,7 +47,7 @@ public class DomReadA7TIJX {
             List<Selling> sellingList = makeSellingList(SellingNodeList);
             List<Bookstore> bookstoreList = makeBookstoreList(BookstoreNodeList);
 
-            //Teljes dokumentum kiírása egyedi strukturált formában
+            //Teljes dokumentum kiírása egyedi strukturált formában listánként
 
             System.out.println("\n-------SERIES-------\n");
 
