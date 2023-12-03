@@ -6,13 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Series{
+    //Attribútumok
     public int seriesID;
     public int sMagazine;
     public int sAuthor;
 
+    //Elemek
     public String seriesName;
     public String ranking;
-    public String numOfReaders;
+    public int numOfReaders;
     public List<String> subGenre;
 
     //Series példány feltöltésére szolgál (segédfüggvény)
@@ -25,7 +27,7 @@ public class Series{
             String nodeContent = seriesNodes.item(item).getChildNodes().item(i).getTextContent();
             if(nodeName.equals("SeriesName")){series.seriesName = nodeContent;}
             else if(nodeName.equals("Ranking")){series.ranking = nodeContent;}
-            else if(nodeName.equals("NumOfReaders")){series.numOfReaders = nodeName;}
+            else if(nodeName.equals("NumOfReaders")){series.numOfReaders = Integer.parseInt(nodeContent);}
             else if(nodeName.equals("Genre")){
                 List<String> subgenreList = new ArrayList<String>();
                 for (String subgenre : subgenreList) {
