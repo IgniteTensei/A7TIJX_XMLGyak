@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsl:stylesheet xmlns:xsl = "http://www.w3.org/1999/XSL/Transform" version = "1.0" >
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" >
     
     <xsl:template match="/">
         <html>
             <body>
                 <h2>Student</h2>
                 
-                <table border = "3">
-                    <tr bgcolor = "#88dbf2">
+                <table border="3">
+                    <tr bgcolor="#88dbf2">
                         <th>STUDENTID</th>
                         <th>Keresztnév</th>
                         <th>Vezeteknév</th>
@@ -19,19 +19,19 @@
                     <xsl:for-each select="class/student">
                         <tr>
                             <td>
-                                <xsl:value-of select = "@studentid"/>
+                                <xsl:value-of select="@studentid"/>
                             </td>
                             <td>
-                                <xsl:value-of select = "keresztnev"/>
+                                <xsl:value-of select="keresztnev"/>
                             </td>
                             <td>
-                                <xsl:value-of select = "vezeteknev"/>
+                                <xsl:value-of select="vezeteknev"/>
                             </td>
                             <td>
-                                <xsl:value-of select = "becenev"/>
+                                <xsl:value-of select="becenev"/>
                             </td>
                             <td>
-                                <xsl:value-of select = "kor"/>
+                                <xsl:value-of select="kor"/>
                             </td>
                         </tr>
                     </xsl:for-each>
