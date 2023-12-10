@@ -3,9 +3,14 @@ import org.w3c.dom.bootstrap.DOMImplementationRegistry;
 import org.w3c.dom.ls.DOMImplementationLS;
 import org.w3c.dom.ls.LSOutput;
 import org.w3c.dom.ls.LSSerializer;
+import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.FileOutputStream;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -13,7 +18,32 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List lista = new ArrayList();
+
+        try{
+            DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = builderFactory.newDocumentBuilder();
+            Document document = builder.parse("A7TIJX_orarend.xml");
+            document.getDocumentElement().normalize();
+
+            try {
+                TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                Transformer transformer = transformerFactory.newTransformer();
+                DOMSource domSource = new DOMSource(document);
+                FileOutputStream output = new FileOutputStream("A7TIJX_1orarend.xml");
+                StreamResult streamResult = new StreamResult(output);
+                transformer.transform(domSource, streamResult);
+                transformer.transform(domSource, new StreamResult(System.out));
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            };
+        }
+        catch (Exception ee) {
+            ee.printStackTrace();
+        }
+
+
+       /* List lista = new ArrayList();
 
         StringWriter stringWriter = new StringWriter();
         String subscrXML=null;
@@ -85,6 +115,6 @@ public class Main {
         }
         catch (Exception ee) {
             ee.printStackTrace();
-        }
+        }*/
     }
 }
