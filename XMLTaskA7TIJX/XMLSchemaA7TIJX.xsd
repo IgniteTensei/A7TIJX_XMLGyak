@@ -16,6 +16,82 @@
                 <xs:element name="Bookstore" type="BookstoreType" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
+
+        <!--Elsődleges kulcsok-->
+
+        <xs:key name="SeriesPK">
+            <xs:selector xpath="Series" />
+            <xs:field xpath="@SeriesID" />
+        </xs:key>
+        <xs:key name="AuthorPK">
+            <xs:selector xpath="Author" />
+            <xs:field xpath="@AuthorID" />
+        </xs:key>
+        <xs:key name="MagazinePK">
+            <xs:selector xpath="Magazine" />
+            <xs:field xpath="@MagazineID" />
+        </xs:key>
+        <xs:key name="PublisherPK">
+            <xs:selector xpath="Publisher" />
+            <xs:field xpath="@PublisherID" />
+        </xs:key>
+        <xs:key name="PresidentPK">
+            <xs:selector xpath="President" />
+            <xs:field xpath="@PresidentID" />
+        </xs:key>
+        <xs:key name="BookPK">
+            <xs:selector xpath="Book" />
+            <xs:field xpath="@BookID" />
+        </xs:key>
+        <xs:key name="BookstorePK">
+            <xs:selector xpath="Bookstore" />
+            <xs:field xpath="@BookstoreID" />
+        </xs:key>
+
+        <!--Idegen kulcsok-->
+
+        <xs:keyref name="SMagazineFK" refer="MagazinePK">
+            <xs:selector xpath="Series" />
+            <xs:field xpath="@SMagazine" />
+        </xs:keyref>
+
+        <xs:keyref name="SAuthorFK" refer="AuthorPK">
+            <xs:selector xpath="Series" />
+            <xs:field xpath="@SAuthor" />
+        </xs:keyref>
+
+        <xs:keyref name="MPublisherFK" refer="PublisherPK">
+            <xs:selector xpath="Magazine" />
+            <xs:field xpath="@MPublisher" />
+        </xs:keyref>
+
+        <xs:keyref name="PPresidentFK" refer="PresidentPK">
+            <xs:selector xpath="Publisher" />
+            <xs:field xpath="@PPresident" />
+        </xs:keyref>
+
+        <xs:keyref name="BSeriesFK" refer="SeriesPK">
+            <xs:selector xpath="Book" />
+            <xs:field xpath="@BSeries" />
+        </xs:keyref>
+
+        <xs:keyref name="SBookIDFK" refer="BookPK">
+            <xs:selector xpath="Selling" />
+            <xs:field xpath="@SBookID" />
+        </xs:keyref>
+
+        <xs:keyref name="SBookstoreIDFK" refer="BookstorePK">
+            <xs:selector xpath="Selling" />
+            <xs:field xpath="@SBookstoreID" />
+        </xs:keyref>
+
+        <!--Egyedi-->
+
+        <xs:unique name="PublisherToPresident">
+            <xs:selector xpath="Publisher" />
+            <xs:field xpath="@PPresident" />
+        </xs:unique>
+
     </xs:element>
 
     <!--Főbb komplex típusok-->
@@ -240,5 +316,9 @@
             <xs:element ref="SHouseNumber" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
+
+    
+
+
 
 </xs:schema>
