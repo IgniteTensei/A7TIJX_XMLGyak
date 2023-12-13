@@ -1,5 +1,6 @@
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.JsonArray;
 import org.json.simple.JsonObject;
 import org.json.simple.parser.JSONParser;
 
@@ -27,6 +28,20 @@ public class JSONWrite {
         JSONObject oraObj = new JSONObject();
         oraObj.put("ora", ora);
         obj.put("gyorki_orarend", oraObj);
+        JSONArray oraArr = (JSONArray) oraObj.get("ora");
+
+        for(int i = 0; i< oraArr.size(); i++) {
+
+            JSONObject o = (JSONObject) oraArr.get(i);
+            JSONObject ido = (JSONObject) o.get("idopont");
+
+            System.out.println("Tárgy: "+ o.get("targy"));
+            System.out.println("Nap: "+ ido.get("nap")+ " Tól: " + ido.get("tol")+ " Ig: " + ido.get("ig"));
+            System.out.println("Helyszín: "+ o.get("helyszin"));
+            System.out.println("Oktató: "+ o.get("oktato"));
+            System.out.println("Szak: "+ o.get("szak"));
+
+        }
 
         try(FileWriter file = new FileWriter("orarendA7TIJX2.json");){
             String jsonString = obj.toString().replace(",", ",\n\t").replace("{", "{\n\t").replace("[", "[\n\t").replace("]", "\n]").replace("}", "\n}");
