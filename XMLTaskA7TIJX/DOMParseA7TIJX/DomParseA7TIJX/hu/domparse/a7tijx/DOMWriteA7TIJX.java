@@ -8,6 +8,7 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -106,12 +107,16 @@ public class DOMWriteA7TIJX {
             KepregenyE.appendChild(newBookstore(document2, bookstoreList.get(1).bookstoreID, bookstoreList.get(1).bookstoreName, bookstoreList.get(1).sCity, bookstoreList.get(1).sStreet, bookstoreList.get(1).sHouseNumber));
             KepregenyE.appendChild(newBookstore(document2, bookstoreList.get(2).bookstoreID, bookstoreList.get(2).bookstoreName, bookstoreList.get(2).sCity, bookstoreList.get(2).sStreet, bookstoreList.get(2).sHouseNumber));
 
+
+
             try {
                 //XML dokumentum write
                 TransformerFactory transformerFactory = TransformerFactory.newInstance();
                 Transformer transformer = transformerFactory.newTransformer();
                 DOMSource domSource = new DOMSource(document2);
-                FileOutputStream output = new FileOutputStream("XMLA7TIJX1write.xml");
+                transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+                FileOutputStream output = new FileOutputStream("XMLA7TIJX11.xml");
                 StreamResult streamResult = new StreamResult(output);
                 transformer.transform(domSource, streamResult);
                 transformer.transform(domSource, new StreamResult(System.out));

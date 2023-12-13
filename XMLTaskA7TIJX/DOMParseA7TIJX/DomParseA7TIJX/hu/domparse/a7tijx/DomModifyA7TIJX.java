@@ -47,6 +47,7 @@ public class DomModifyA7TIJX {
                 FileOutputStream output = new FileOutputStream("XMLA7TIJXmodify.xml");
                 StreamResult streamResult = new StreamResult(output);
                 transformer.transform(domSource, streamResult);
+                transformer.transform(domSource,  new StreamResult(System.out));
 
             } catch (Exception e) {
                 e.printStackTrace();

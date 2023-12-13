@@ -1,7 +1,12 @@
 package hu.domparse.a7tijx;
+import java.io.FileOutputStream;
 import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.*;
 
@@ -49,7 +54,18 @@ public class DomReadA7TIJX {
 
             //Teljes dokumentum kiírása egyedi strukturált formában listánként
 
-            System.out.println("\n-------SERIES-------\n");
+            try {
+                //XML dokumentum write
+                TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                Transformer transformer = transformerFactory.newTransformer();
+                DOMSource domSource = new DOMSource(document);
+                transformer.transform(domSource, new StreamResult(System.out));
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            };
+
+           /* System.out.println("\n-------SERIES-------\n");
 
             for (Series s : seriesList) {
                 System.out.println("Series:");
@@ -123,7 +139,10 @@ public class DomReadA7TIJX {
                 System.out.println("Attributes: BookstoreID=" + bs.bookstoreID);
                 System.out.println("Elements: BookstoreName=" + bs.bookstoreName + ", StoreAddress: SCity=" + bs.sCity + "SStreet=" + bs.sStreet + "SHouseNumber=" + bs.sHouseNumber);
                 System.out.println("-----------------------");
+
             }
+
+            */
         }
         catch (Exception ee) {
         ee.printStackTrace();
