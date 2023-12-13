@@ -1,1 +1,138 @@
-{"gyorki_orarend":{"ora":[{"targy":"Fizika II","oktato":"Dr. Pszota Gábor","szak":"mérnökinformatikus","idopont":{"tol":8,"nap":"Hétfő","ig":10},"helyszin":"A1 305"},{"targy":"Szoftvertesztelés","oktato":"Dr. Hornyák Olivér","szak":"mérnökinformatikus","idopont":{"tol":10,"nap":"Hétfő","ig":12},"helyszin":"info 103"},{"targy":"Szoftvertesztelés","oktato":"Dr. Hornyák Olivér","szak":"mérnökinformatikus","idopont":{"tol":12,"nap":"Hétfő","ig":14},"helyszin":"info 103"},{"targy":"Webtechnológiák I","oktato":"Agárdi Anita","szak":"mérnökinformatikus","idopont":{"tol":14,"nap":"Hétfő","ig":16},"helyszin":"A1 305"},{"targy":"Webtechnológiák I","oktato":"Agárdi Anita","szak":"mérnökinformatikus","idopont":{"tol":16,"nap":"Hétfő","ig":18},"helyszin":"info 103"},{"targy":"Adatkezelés XMLben","oktato":"Dr. Bednarik László","szak":"mérnökinformatikus","idopont":{"tol":12,"nap":"Kedd","ig":14},"helyszin":"XXXII előadó"},{"targy":"Webes Alkalmazások","oktato":"Dr. Árvai László","szak":"mérnökinformatikus","idopont":{"tol":14,"nap":"Kedd","ig":16},"helyszin":"info 101"},{"targy":"Webes Alkalmazások","oktato":"Dr. Mileff Péter","szak":"mérnökinformatikus","idopont":{"tol":16,"nap":"Kedd","ig":18},"helyszin":"info 101"},{"targy":"Adatkezelés XMLben","oktato":"Dr. Bednarik László","szak":"mérnökinformatikus","idopont":{"tol":10,"nap":"Szerda","ig":12},"helyszin":"info 101f"},{"targy":"Integrált Vállalati Rendszerek","oktato":"Dr. Samad Dadvandipour","szak":"mérnökinformatikus","idopont":{"tol":12,"nap":"Szerda","ig":14},"helyszin":"A1 218"},{"targy":"Integrált Vállalati Rendszerek","oktato":"Kulcsárné Dr. Forrai Mónika","szak":"mérnökinformatikus","idopont":{"tol":14,"nap":"Szerda","ig":16},"helyszin":"info 15"}]}}
+{
+	"gyorki_orarend":{
+	"ora":[
+	{
+	"targy":"Fizika II",
+    "idopont":{
+        "nap":"Hétfő",
+        "tol":8,
+        "ig":10
+    },
+    "helyszin":"A1 305",
+	"oktato":"Dr. Pszota Gábor",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Szoftvertesztelés",
+    "idopont":{
+        "nap":"Hétfő",
+        "tol":10,
+        "ig":12
+    },
+    "helyszin":"info 103",
+	"oktato":"Dr. Hornyák Olivér",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Szoftvertesztelés",
+    "idopont":{
+        "nap":"Hétfő",
+        "tol":12,
+        "ig":14
+    },
+    "helyszin":"info 103",
+	"oktato":"Dr. Hornyák Olivér",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Webtechnológiák I",
+    "idopont":{
+        "nap":"Hétfő",
+        "tol":14, 
+        "ig":16
+    },
+    "helyszin":"A1 305",
+	"oktato":"Agárdi Anita",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Webtechnológiák I",
+    "idopont":{
+        "nap":"Hétfő",
+        "tol":16,   
+        "ig":18
+    },
+    "helyszin":"info 103",
+	"oktato":"Agárdi Anita",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Adatkezelés XMLben",
+    "idopont":{
+        "nap":"Kedd",
+        "tol":12, 
+        "ig":14
+    },
+    "helyszin":"XXXII előadó",
+	"oktato":"Dr. Bednarik László",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Webes Alkalmazások",
+    "idopont":{
+        "nap":"Kedd",
+        "tol":14,  
+        "ig":16
+    },
+    "helyszin":"info 101",
+	"oktato":"Dr. Árvai László",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Webes Alkalmazások",
+    "idopont":{
+        "nap":"Kedd",
+        "tol":16,   
+        "ig":18
+    },
+    "helyszin":"info 101",
+	"oktato":"Dr. Mileff Péter",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Adatkezelés XMLben",
+    "idopont":{
+        "nap":"Szerda",
+        "tol":10,  
+        "ig":12
+    },
+    "helyszin":"info 101f",
+	"oktato":"Dr. Bednarik László",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Integrált Vállalati Rendszerek",
+    "idopont":{
+        "nap":"Szerda",
+        "tol":12,
+        "ig":14
+    },
+    "helyszin":"A1 218",
+	"oktato":"Dr. Samad Dadvandipour",
+	"szak":"mérnökinformatikus"
+	
+},
+	{
+	"targy":"Integrált Vállalati Rendszerek",
+    "idopont":{
+        "nap":"Szerda",
+        "tol":14,       
+        "ig":16
+    },
+    "helyszin":"info 15",
+	"oktato":"Kulcsárné Dr. Forrai Mónika",
+	"szak":"mérnökinformatikus"
+		
+}
+]
+}
+}

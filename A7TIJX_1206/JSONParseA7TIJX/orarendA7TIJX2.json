@@ -2,13 +2,24 @@
 	"gyorki_orarend":{
 	"ora":[
 	{
+	"targy":"Kitalált I",
+	"oktato":"Dr. Doktor Dokktro",
+	"szak":"mérnökinformatikus",
+	"idopont":{
+	"tol":"6",
+	"nap":"Hétfő",
+	"ig":"8"
+},
+	"helyszin":"A1 201"
+},
+	{
 	"targy":"Fizika II",
 	"oktato":"Dr. Pszota Gábor",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":8,
+	"tol":"8",
 	"nap":"Hétfő",
-	"ig":10
+	"ig":"10"
 },
 	"helyszin":"A1 305"
 },
@@ -17,9 +28,9 @@
 	"oktato":"Dr. Hornyák Olivér",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":10,
+	"tol":"10",
 	"nap":"Hétfő",
-	"ig":12
+	"ig":"12"
 },
 	"helyszin":"info 103"
 },
@@ -28,9 +39,9 @@
 	"oktato":"Dr. Hornyák Olivér",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":12,
+	"tol":"12",
 	"nap":"Hétfő",
-	"ig":14
+	"ig":"14"
 },
 	"helyszin":"info 103"
 },
@@ -39,9 +50,9 @@
 	"oktato":"Agárdi Anita",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":14,
+	"tol":"14",
 	"nap":"Hétfő",
-	"ig":16
+	"ig":"16"
 },
 	"helyszin":"A1 305"
 },
@@ -50,9 +61,9 @@
 	"oktato":"Agárdi Anita",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":16,
+	"tol":"16",
 	"nap":"Hétfő",
-	"ig":18
+	"ig":"18"
 },
 	"helyszin":"info 103"
 },
@@ -61,9 +72,9 @@
 	"oktato":"Dr. Bednarik László",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":12,
+	"tol":"12",
 	"nap":"Kedd",
-	"ig":14
+	"ig":"14"
 },
 	"helyszin":"XXXII előadó"
 },
@@ -72,9 +83,9 @@
 	"oktato":"Dr. Árvai László",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":14,
+	"tol":"14",
 	"nap":"Kedd",
-	"ig":16
+	"ig":"16"
 },
 	"helyszin":"info 101"
 },
@@ -83,9 +94,9 @@
 	"oktato":"Dr. Mileff Péter",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":16,
+	"tol":"16",
 	"nap":"Kedd",
-	"ig":18
+	"ig":"18"
 },
 	"helyszin":"info 101"
 },
@@ -94,20 +105,20 @@
 	"oktato":"Dr. Bednarik László",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":10,
+	"tol":"10",
 	"nap":"Szerda",
-	"ig":12
+	"ig":"12"
 },
-	"helyszin":"info 101f"
+	"helyszin":"info 101"
 },
 	{
 	"targy":"Integrált Vállalati Rendszerek",
 	"oktato":"Dr. Samad Dadvandipour",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":12,
+	"tol":"12",
 	"nap":"Szerda",
-	"ig":14
+	"ig":"14"
 },
 	"helyszin":"A1 218"
 },
@@ -116,9 +127,9 @@
 	"oktato":"Kulcsárné Dr. Forrai Mónika",
 	"szak":"mérnökinformatikus",
 	"idopont":{
-	"tol":14,
+	"tol":"14",
 	"nap":"Szerda",
-	"ig":16
+	"ig":"16"
 },
 	"helyszin":"info 15"
 }
